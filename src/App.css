@@ -2,6 +2,14 @@
   text-align: center;
 }
 
+.navBar, .navBarBg{
+  background-color: #53adc6;
+}
+
+.navBar ul {
+  list-style: none;
+}
+
 .App-logo {
   height: 40vmin;
   pointer-events: none;

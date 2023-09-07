@@ -5,8 +5,10 @@ import { Container, Nav, NavDropdown, Navbar } from 'react-bootstrap';
 export const NavBarBootstrap = () => {
     return (
         <>
-            <Navbar expand="xxl" className="bg-body-tertiary">
+            <Navbar expand="xxxl" className="navbar navBarBg">
                 <Container>
+                    {/* aca pone un a img */}
+                    {/* cambia el color de la navbar */}
                     <Navbar.Brand href="#home">La Friki Cueva</Navbar.Brand>
                     <Navbar.Toggle aria-controls="basic-navbar-nav" />
                     <Navbar.Collapse id="basic-navbar-nav">

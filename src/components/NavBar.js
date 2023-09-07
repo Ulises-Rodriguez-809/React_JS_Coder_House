@@ -3,7 +3,7 @@ import React from 'react';
 export const NavBar = () => {
     return (
         <>
-            <nav>
+            <nav className='navBar'>
                 <ul>
                     <li>a</li>
                     <li>b</li>
