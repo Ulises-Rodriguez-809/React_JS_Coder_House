@@ -1,11 +1,11 @@
 import './App.css';
 import { ItemListContainer } from './components/ItemListContainer';
-import { NavBarBootstrap } from './components/NavBarBootstrap';
+import { NavBar } from './components/NavBar';
 
 function App() {
   return (
     <>
-      <NavBarBootstrap />
+      <NavBar />
       <ItemListContainer mensaje="Bienvenido a la tienda!!!"/>
     </>
   );
