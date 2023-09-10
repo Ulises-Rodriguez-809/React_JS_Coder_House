@@ -14,10 +14,9 @@ export const NavBar = () => {
                 </button>
                 <div className="collapse navbar-collapse" id="navbarSupportedContent">
                     <ul className="navbar-nav me-auto mb-2 mb-lg-0">
-                        <LiElementos nombre="Juegos 64bits"/>
-                        <LiElementos nombre="Revistas Retro"/>
-                        <LiElementos nombre="Figuras"/>
-                        <LiElementos nombre="Juegos 64bits"/>
+                        <LiElementos nombre="Juegos 64bits" url="#juegos64bits"/>
+                        <LiElementos nombre="Revistas Retro" url="#revistasRetro"/>
+                        <LiElementos nombre="Figuras" url="#figuras"/>
                         <LiDropdownContainer nombre="Consolas Retro" />
                     </ul>
                     <CardWidget />

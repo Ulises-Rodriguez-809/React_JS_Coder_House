@@ -1,5 +1,5 @@
 import React from 'react'
 
-export const LiDropdown = ({ categoria }) => {
-    return <li><a className="dropdown-item" href="#">{categoria}</a></li>
+export const LiDropdown = ({ categoria, url }) => {
+    return <li><a className="dropdown-item" href={url}>{categoria}</a></li>
 }

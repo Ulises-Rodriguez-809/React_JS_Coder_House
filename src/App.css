@@ -40,3 +40,20 @@
   margin-top: 20px;
   font-size: 2rem;
 }
+
+.ulCarrito li {
+  list-style: none;
+  margin-top: 10px;
+  padding-left: 7px;
+}
+
+.ulComprar{
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  flex-direction: column;
+}
+
+.ulComprar li{
+  padding-right: 10px;
+}
