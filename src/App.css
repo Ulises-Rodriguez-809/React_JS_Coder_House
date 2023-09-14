@@ -1,4 +1,5 @@
-.navBar, .navBarBg{
+.navBar,
+.navBarBg {
   background-color: #50c3e3;
   justify-content: space-between;
 }
@@ -7,36 +8,36 @@
   list-style: none;
 }
 
-.home{
+.home {
   margin-right: 20px;
 }
 
-.titulo{
+.titulo {
   font-size: 2rem;
 }
 
-.opcionLink{
+.opcionLink {
   font-size: 2rem;
 }
 
-.carritoContainer{
+.carritoContainer {
   display: flex;
   align-items: center;
   justify-content: center;
 }
 
-.carritoImg{
+.carritoImg {
   width: 50px;
   height: 50px;
 }
 
-.msgContainer{
+.msgContainer {
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
-.msg{
+.msg {
   margin-top: 20px;
   font-size: 2rem;
 }
@@ -47,13 +48,13 @@
   padding-left: 7px;
 }
 
-.ulComprar{
+.ulComprar {
   display: flex;
   justify-content: center;
   align-items: flex-end;
   flex-direction: column;
 }
 
-.ulComprar li{
+.ulComprar li {
   padding-right: 10px;
 }
