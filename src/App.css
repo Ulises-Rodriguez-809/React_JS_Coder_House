@@ -1,3 +1,10 @@
+/* loading */
+.cargandoTitulo{
+  color: #5c81f1;
+  text-align: center;
+  margin: 10rem 0 50rem 0;
+}
+
 ul{
   margin: 0;
   padding: 0;
