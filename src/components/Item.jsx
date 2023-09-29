@@ -12,7 +12,7 @@ export const Item = ({ titulo, descripcion, precio, children }) => {
                     <p className="card-text">{descripcion}</p>
                     <p className="card-text">{`$${precio}`}</p>
                 </div>
-                <div>
+                <div className='divComprar'>
                     <Counter />
                     <BtnComprar />
                 </div>

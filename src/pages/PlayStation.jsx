@@ -1,10 +1,9 @@
-import React, { useEffect, useState } from 'react';
-import { Item } from './Item';
-import useFetch from '../customHooks/useFetch';
+import React, { useEffect, useState } from 'react'
 import { loadingFun } from '../funJS/asyncMocks';
+import useFetch from '../customHooks/useFetch';
+import { Item } from '../components/Item';
 
-export const ItemListContainer = ({ mensaje }) => {
-
+export const PlayStation = () => {
     const { productos } = useFetch('./t10Productos/t10P.json');
 
     const [loading, setLoading] = useState(false);
@@ -20,9 +19,6 @@ export const ItemListContainer = ({ mensaje }) => {
 
     return (
         <>
-            <div className='msgContainer'>
-                <p className='msg'>{mensaje}</p>
-            </div>
             <div className='divUlCardsContainer'>
                 <ul className='ulCards'>
                     {productos.map((producto) => <Item key={producto.id} titulo={producto.nombre} descripcion={producto.descripcion} precio={producto.precio}>

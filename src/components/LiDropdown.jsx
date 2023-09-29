@@ -1,5 +1,7 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
+
 
 export const LiDropdown = ({ categoria, url }) => {
-    return <li><a className="dropdown-item" href={url}>{categoria}</a></li>
+    return <Link to={url} className="dropdown-item">{categoria}</Link>
 }

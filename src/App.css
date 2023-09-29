@@ -74,11 +74,33 @@ ul{
   padding-right: 10px;
 }
 
-/* COUNTER */
-.btnMenosDisable{
-  pointer-events: none;
+/* Comprar opciones */
+.divComprar{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
+.divBtnCounterContainer{
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  margin-bottom: 10px;
+  width: 100%;
+}
+
+.divBtnCounterContainer button{
+  font-size: 20px;
+  font-weight: 600;
+  width: 30px;
+  text-align: center;
+}
+
+.divBtnCounterContainer p{
+  margin: 0 4rem;
+  font-weight: 700;
+}
 
 /* FOOTER */
 .footer{
@@ -148,8 +170,7 @@ ul{
 }
 
 .imgProductos{
-  /* width: 15rem; */
-  height: 15rem;
+  height: 13rem;
 }
 
 .divTextCard{

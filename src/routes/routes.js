@@ -4,15 +4,28 @@ export const routes = [
         name: 'Home',
     },
     {
-        path: '/xbox',
-        name: 'Xbox',
+        path: '/revistas',
+        name: 'Revistas',
     },
     {
         path: '/figuras',
         name: 'Figuras',
     },
     {
-        path: '/playstation',
-        name: 'PlayStation',
-    }
+        consolas: [
+            {
+                path: '/xbox',
+                name: 'Xbox',
+            },
+            {
+                path: '/playstation',
+                name: 'PlayStation',
+            },
+            {
+                path: '/nintendo',
+                name: 'Nintendo',
+            }
+        ]
+    },
+
 ]

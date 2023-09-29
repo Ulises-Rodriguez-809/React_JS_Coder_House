@@ -1,0 +1,215 @@
+[
+    {
+        "id": 1,
+        "consola": "Xbox",
+        "precio": "$299.99",
+        "descripcion": "La primera consola de Microsoft, lanzada en 2001, con un rendimiento de 480p y un catálogo de juegos exclusivos como Halo, Fable y Forza Motorsport.",
+        "url": "[1]",
+        "juegos": [
+            {
+                "id": 1,
+                "name": "Grand Theft Auto: San Andreas",
+                "precio": "$19.99",
+                "descripcion": "Un juego de acción y aventura en un mundo abierto ambientado en los años 90, donde podrás explorar tres ciudades y realizar todo tipo de misiones y actividades.",
+                "url": "[1](https://vandal.elespanol.com/rankings/xbox)"
+            },
+            {
+                "id": 2,
+                "name": "Project Gotham Racing 2",
+                "precio": "$9.99",
+                "descripcion": "Un juego de carreras que combina la velocidad con el estilo, donde podrás competir con más de 100 coches por las calles de ciudades reales como Barcelona, Chicago o Hong Kong.",
+                "url": "[2](https://vandal.elespanol.com/rankings/xbox-one)"
+            },
+            {
+                "id": 3,
+                "name": "Burnout 3 Takedown",
+                "precio": "$14.99",
+                "descripcion": "Un juego de carreras que te anima a conducir de forma temeraria, provocando accidentes espectaculares y eliminando a tus rivales de la pista.",
+                "url": "[3](https://es.ign.com/xbox/175276/feature/los-10-mejores-juegos-exclusivos-de-xbox-de-todos-los-tiempos)"
+            },
+            {
+                "id": 4,
+                "name": "Halo 2",
+                "precio": "$19.99",
+                "descripcion": "La secuela del aclamado juego de disparos en primera persona, que continúa la historia del Jefe Maestro y su lucha contra el Covenant, con una campaña épica y un multijugador adictivo.",
+                "url": "[4]"
+            },
+            {
+                "id": 5,
+                "name": "Ninja Gaiden",
+                "precio": "$14.99",
+                "descripcion": "Un juego de acción y plataformas que te pone en la piel de Ryu Hayabusa, un ninja que debe enfrentarse a un malvado clan que busca revivir a un demonio ancestral.",
+                "url": "[5]"
+            }
+        ]
+    },
+    {
+        "id": 2,
+        "name": "Xbox 360",
+        "precio": "$299.99",
+        "descripcion": "La segunda consola de Microsoft, lanzada en 2005, con un rendimiento de 720p y una amplia variedad de juegos y servicios como Xbox Live, Kinect y Xbox Game Pass.",
+        "url": "[2]",
+        "juegos": [
+            {
+                "id": 1,
+                "name": "Grand Theft Auto V",
+                "precio": 19.99,
+                "descripcion": "Un juego de acción y mundo abierto en el que puedes vivir la vida como quieras.",
+                "url": "https://www.xbox.com/es-es/games/grand-theft-auto-v/"
+            },
+            {
+                "id": 2,
+                "name": "Red Dead Redemption",
+                "precio": 19.99,
+                "descripcion": "Una épica historia de venganza y redención ambientada en el salvaje oeste americano.",
+                "url": "https://www.xbox.com/es-es/games/red-dead-redemption/"
+            },
+            {
+                "id": 3,
+                "name": "Halo 3",
+                "precio": 9.99,
+                "descripcion": "La conclusión de la trilogía original de Halo, en la que el Jefe Maestro debe detener a los Covenant.",
+                "url": "https://www.xbox.com/es-es/games/halo-3/"
+            },
+            {
+                "id": 4,
+                "name": "The Elder Scrolls V: Skyrim",
+                "precio": 19.99,
+                "descripcion": "Una aventura de rol de mundo abierto ambientada en un mundo lleno de fantasía y peligros.",
+                "url": "https://www.xbox.com/es-es/games/the-elder-scrolls-v-skyrim/"
+            },
+            {
+                "id": 5,
+                "name": "Mass Effect 2",
+                "precio": 9.99,
+                "descripcion": "La segunda entrega de la saga Mass Effect, en la que Shepard debe reunir a una nueva tripulación para detener a una amenaza intergaláctica.",
+                "url": "https://www.xbox.com/es-es/games/mass-effect-2/"
+            }
+        ]
+    },
+    {
+        "id": 3,
+        "consola": "Xbox One",
+        "precio": "$499.99",
+        "descripcion": "La tercera consola de Microsoft, lanzada en 2013, con un rendimiento de 1080p y una integración con Windows 10, Cortana y el asistente virtual Alexa.",
+        "url": "[3]",
+        "juegos": [
+            {
+                "id": 1,
+                "name": "Red Dead Redemption 2",
+                "precio": "$59.99",
+                "descripcion": "La precuela del exitoso juego de Rockstar, que te lleva al salvaje oeste a finales del siglo XIX, donde podrás vivir una aventura de forajidos, cazar, pescar, explorar y sobrevivir en un vasto mundo abierto.",
+                "url": "[6]"
+            },
+            {
+                "id": 2,
+                "name": "Elden Ring",
+                "precio": "$69.99",
+                "descripcion": "El nuevo juego de FromSoftware y Bandai Namco, que mezcla la jugabilidad de Dark Souls con un mundo abierto diseñado por George R.R. Martin, el autor de Canción de hielo y fuego, donde podrás enfrentarte a desafiantes enemigos y jefes en un entorno fantástico y oscuro.",
+                "url": "[7]"
+            },
+            {
+                "id": 3,
+                "name": "Forza Horizon 4",
+                "precio": "$59.99",
+                "descripcion": "La cuarta entrega de la saga de carreras en mundo abierto, que te permite conducir más de 450 coches por el Reino Unido, con un sistema de estaciones dinámico que cambia el clima y el terreno.",
+                "url": "[8]"
+            },
+            {
+                "id": 4,
+                "name": "Sekiro: Shadows Die Twice",
+                "precio": "$59.99",
+                "descripcion": "Otro juego de FromSoftware, que te traslada al Japón feudal del siglo XVI, donde encarnas a un shinobi que debe rescatar a su maestro secuestrado, usando armas, herramientas y habilidades ninja para superar a sus adversarios.",
+                "url": "[9]"
+            }
+        ]
+    },
+    {
+        "id": 4,
+        "consola": "Xbox Series X",
+        "precio": "$549.99",
+        "descripcion": "La cuarta y más reciente consola de Microsoft, lanzada en 2020, con un rendimiento de 4K y una velocidad de hasta 120 fps, compatible con los juegos de las generaciones anteriores.",
+        "url": "[4]",
+        "juegos": [
+            {
+                "id": 1,
+                "name": "Forza Horizon 5",
+                "precio": "$59.99",
+                "descripcion": "La quinta entrega de la saga de carreras en mundo abierto, que te lleva a explorar y competir en el vibrante y diverso México, con un apartado gráfico impresionante y un clima realista.",
+                "url": "[10]"
+            },
+            {
+                "id": 2,
+                "name": "Halo Infinite",
+                "precio": "$59.99",
+                "descripcion": "La esperada continuación de la saga de disparos en primera persona, que retoma la historia del Jefe Maestro y su enfrentamiento contra una nueva amenaza, con una campaña emocionante y un multijugador renovado.",
+                "url": "[11]"
+            },
+            {
+                "id": 3,
+                "name": "Psychonauts 2",
+                "precio": "$59.99",
+                "descripcion": "La secuela del aclamado juego de plataformas y humor, que te pone en la piel de Raz, un joven con poderes psíquicos que debe infiltrarse en las mentes de diferentes personajes para resolver sus problemas y descubrir sus secretos.",
+                "url": "[12]"
+            },
+            {
+                "id": 4,
+                "name": "Resident Evil Village",
+                "precio": "$59.99",
+                "descripcion": "La octava entrega de la saga de terror y supervivencia, que sigue la historia de Ethan Winters tras los eventos de Resident Evil 7, llevándolo a un misterioso pueblo europeo donde tendrá que enfrentarse a criaturas horripilantes y a la temible Lady Dimitrescu.",
+                "url": "[13]"
+            },
+            {
+                "id": 5,
+                "name": "It Takes Two",
+                "precio": "$39.99",
+                "descripcion": "Un juego de aventuras y cooperación, que te invita a jugar con un amigo o pareja para controlar a Cody y May, una pareja al borde del divorcio que se convierten en muñecos por un hechizo, y que tendrán que superar diversos obstáculos y desafíos para recuperar su forma humana y su relación.",
+                "url": "[14]"
+            }
+        ]
+    },
+    {
+        "id": 5,
+        "consola": "Xbox Series S",
+        "precio": "$299.99",
+        "descripcion": "La versión más económica y compacta de la Xbox Series X, lanzada en 2020, con un rendimiento de 1440p y una velocidad de hasta 120 fps, compatible con los juegos de las generaciones anteriores.",
+        "url": "[5]",
+        "juegos": [
+            {
+                "id": 1,
+                "name": "Forza Horizon 5",
+                "precio": "$59.99",
+                "descripcion": "La quinta entrega de la saga de carreras en mundo abierto, que te lleva a explorar y competir en el vibrante y diverso México, con un apartado gráfico impresionante y un clima realista.",
+                "url": "[10]"
+            },
+            {
+                "id": 2,
+                "name": "Halo Infinite",
+                "precio": "$59.99",
+                "descripcion": "La esperada continuación de la saga de disparos en primera persona, que retoma la historia del Jefe Maestro y su enfrentamiento contra una nueva amenaza, con una campaña emocionante y un multijugador renovado.",
+                "url": "[11]"
+            },
+            {
+                "id": 3,
+                "name": "Psychonauts 2",
+                "precio": "$59.99",
+                "descripcion": "La secuela del aclamado juego de plataformas y humor, que te pone en la piel de Raz, un joven con poderes psíquicos que debe infiltrarse en las mentes de diferentes personajes para resolver sus problemas y descubrir sus secretos.",
+                "url": "[12]"
+            },
+            {
+                "id": 4,
+                "name": "Resident Evil Village",
+                "precio": "$59.99",
+                "descripcion": "La octava entrega de la saga de terror y supervivencia, que sigue la historia de Ethan Winters tras los eventos de Resident Evil 7, llevándolo a un misterioso pueblo europeo donde tendrá que enfrentarse a criaturas horripilantes y a la temible Lady Dimitrescu.",
+                "url": "[13]"
+            },
+            {
+                "id": 5,
+                "name": "It Takes Two",
+                "precio": "$39.99",
+                "descripcion": "Un juego de aventuras y cooperación, que te invita a jugar con un amigo o pareja para controlar a Cody y May, una pareja al borde del divorcio que se convierten en muñecos por un hechizo, y que tendrán que superar diversos obstáculos y desafíos para recuperar su forma humana y su relación.",
+                "url": "[14]"
+            }
+        ]
+    }
+]

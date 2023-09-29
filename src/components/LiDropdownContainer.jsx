@@ -8,10 +8,9 @@ export const LiDropdownContainer = ({nombre}) => {
                 {nombre}
             </a>
             <ul className="dropdown-menu">
-                <LiDropdown categoria="PlayStation" url="#playStation"/>
-                <LiDropdown categoria="Xbox" url="#xbox"/>
-                <LiDropdown categoria="Nintendo" url="#nintendo"/>
-                <LiDropdown categoria="Portatiles" url="#portatiles"/>
+                <LiDropdown categoria="PlayStation" url="/consolasretro/:playstation"/>
+                <LiDropdown categoria="Xbox" url="/consolasretro/:xbox"/>
+                <LiDropdown categoria="Nintendo" url="/consolasretro/:nintendo"/>
             </ul>
         </li>
     )
