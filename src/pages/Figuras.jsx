@@ -1,28 +1,22 @@
-import React, { useEffect, useState } from 'react'
-import { loadingFun } from '../funJS/asyncMocks';
+import React from 'react'
 import useFetch from '../customHooks/useFetch';
 import { Item } from '../components/Item';
 
 export const Figuras = () => {
-    const { productos } = useFetch('./t10Productos/t10P.json');
 
-    const [loading, setLoading] = useState(false);
-
-    useEffect(() => {
-        loadingFun()
-            .then(cargando => setLoading(cargando))
-    }, [])
-
-    if (!loading) {
-        return <h1 className='cargandoTitulo'>Cargando los productos</h1>
-    }
-
+    const { productos } = useFetch('./figuras/figuras.json');
+    
     return (
         <>
             <div className='divUlCardsContainer'>
                 <ul className='ulCards'>
-                    {productos.map((producto) => <Item key={producto.id} titulo={producto.nombre} descripcion={producto.descripcion} precio={producto.precio}>
-                        <img className='imgProductos' src={producto.url} alt={producto.nombre} />
+                    {productos && productos.map((figura) => <Item 
+                    key={figura.id} 
+                    titulo={figura.name} 
+                    descripcion={figura.descripcion} 
+                    precio={figura.precio}
+                    style={{width : "18rem",height : "510px"}}>
+                        <img className='imgProductos' src={figura.url} alt={figura.name} />
                     </Item>)}
                 </ul>
             </div>

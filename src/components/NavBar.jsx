@@ -2,7 +2,8 @@ import React from 'react';
 import { Brand } from './Brand';
 import { CardWidget } from './CardWidget';
 import { LiElementos } from './LiElementos';
-import { LiDropdownContainer } from './LiDropdownContainer';
+// import { LiDropdownContainer } from './LiDropdownContainer';
+import {RUTAS} from '../routes/routes';
 
 export const NavBar = () => {
     return (
@@ -14,9 +15,12 @@ export const NavBar = () => {
                 </button>
                 <div className="collapse navbar-collapse" id="navbarSupportedContent">
                     <ul className="navbar-nav me-auto mb-2 mb-lg-0">
-                        <LiElementos nombre="Top 10 juegos retro" url="/"/>
+                        {RUTAS.map((ruta)=><LiElementos key={ruta.name} nombre={ruta.name} url={ruta.path}/>)}
+                        {/* <LiElementos nombre="Top 10 juegos retro" url="/"/>
                         <LiElementos nombre="Figuras" url="/figuras"/>
-                        <LiDropdownContainer nombre="Consolas Retro" />
+                        <LiElementos nombre="Consolas" url="/consolas"/>
+                        <LiElementos nombre="Juegos" url="/juegos"/> */}
+                        {/* <LiDropdownContainer nombre="Consolas Retro" /> */}
                     </ul>
                     <CardWidget />
                 </div>

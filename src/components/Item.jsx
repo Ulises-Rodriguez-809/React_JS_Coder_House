@@ -2,10 +2,10 @@ import React from 'react'
 import { BtnComprar } from './BtnComprar'
 import { Counter } from './Counter'
 
-export const Item = ({ titulo, descripcion, precio, children }) => {
+export const Item = ({ titulo, descripcion, precio, style={width : "18rem", height : "fit-content"},children }) => {
     return (
         <>
-            <div className="card">
+            <div className="card" style={style}>
                 <h2>{titulo}</h2>
                 {children}
                 <div className="card-body divTextCard">

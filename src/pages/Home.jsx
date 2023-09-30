@@ -2,6 +2,7 @@ import React, { useEffect, useState } from 'react'
 import { loadingFun } from '../funJS/asyncMocks';
 import useFetch from '../customHooks/useFetch';
 import { Item } from '../components/Item';
+import { ItemListContainer } from '../components/ItemListContainer';
 
 export const Home = () => {
     const { productos } = useFetch('./t10Productos/t10P.json');
@@ -19,6 +20,7 @@ export const Home = () => {
 
     return (
         <>
+            <ItemListContainer mensaje="Bienvenido a la tienda!!!"/>
             <div className='divUlCardsContainer'>
                 <ul className='ulCards'>
                     {productos.map((producto) => <Item key={producto.id} titulo={producto.nombre} descripcion={producto.descripcion} precio={producto.precio}>

@@ -1,31 +1,19 @@
-export const routes = [
+export const RUTAS = [
     {
         path: '/',
-        name: 'Home',
-    },
-    {
-        path: '/revistas',
-        name: 'Revistas',
+        name: 'Top 10 juegos retro',
     },
     {
         path: '/figuras',
         name: 'Figuras',
     },
     {
-        consolas: [
-            {
-                path: '/xbox',
-                name: 'Xbox',
-            },
-            {
-                path: '/playstation',
-                name: 'PlayStation',
-            },
-            {
-                path: '/nintendo',
-                name: 'Nintendo',
-            }
-        ]
+        path : '/consolas',
+        name : 'Consolas'
     },
+    {
+        path : '/juegos',
+        name : 'Juegos'
+    }
 
 ]
