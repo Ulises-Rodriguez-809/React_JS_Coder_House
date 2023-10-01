@@ -25,7 +25,8 @@ export const ConsolaDetalle = () => {
                 titulo={consolaProduct.consola} 
                 descripcion={consolaProduct.descripcion} 
                 precio={consolaProduct.precio}
-                style={{width : "18rem",height : "710px"}}>
+                style={{width : "18rem",height : "710px"}}
+                stock={consolaProduct.stock}>
                     <img className='imgProductos' src={consolaProduct.url} alt={consolaProduct.consola} />
                 </Item>)}
             </ul>

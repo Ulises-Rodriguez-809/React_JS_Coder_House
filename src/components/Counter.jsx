@@ -1,11 +1,11 @@
 import React, { useState } from 'react'
 
-export const Counter = () => {
+export const Counter = ({stock}) => {
 
     const [count, setCount] = useState(0);
 
     const incrementar = ()=>{
-        setCount(prevCount => prevCount + 1);
+        (stock > count) && setCount(prevCount => prevCount + 1);
     }
 
     const decrementar = ()=>{

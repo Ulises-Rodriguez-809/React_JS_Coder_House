@@ -15,7 +15,8 @@ export const Figuras = () => {
                     titulo={figura.name} 
                     descripcion={figura.descripcion} 
                     precio={figura.precio}
-                    style={{width : "18rem",height : "510px"}}>
+                    style={{width : "18rem",height : "510px"}}
+                    stock={figura.stock}>
                         <img className='imgProductos' src={figura.url} alt={figura.name} />
                     </Item>)}
                 </ul>

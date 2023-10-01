@@ -2,7 +2,7 @@ import React from 'react'
 import { BtnComprar } from './BtnComprar'
 import { Counter } from './Counter'
 
-export const Item = ({ titulo, descripcion, precio, style={width : "18rem", height : "fit-content"},children }) => {
+export const Item = ({ titulo, descripcion, precio, style={width : "18rem", height : "fit-content"}, stock ,children }) => {
     return (
         <>
             <div className="card" style={style}>
@@ -13,7 +13,7 @@ export const Item = ({ titulo, descripcion, precio, style={width : "18rem", heig
                     <p className="card-text">{`$${precio}`}</p>
                 </div>
                 <div className='divComprar'>
-                    <Counter />
+                    <Counter stock={stock}/>
                     <BtnComprar />
                 </div>
             </div>

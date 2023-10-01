@@ -195,3 +195,16 @@ ul {
   font-size: 30px;
   text-decoration: none;
 }
+
+.divLinkInfoContainer{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-direction: column;
+  margin-bottom: 3.1rem;
+}
+
+.imgLink{
+  width: 18rem;
+  height: 18rem;
+}

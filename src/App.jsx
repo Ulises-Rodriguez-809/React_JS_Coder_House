@@ -14,7 +14,6 @@ function App() {
       <BrowserRouter>
       <Layout>
         <Routes>
-          {/* esto hacelo con el map y routes.js */}
           <Route path='/' element={<Home />} />
           <Route path='/figuras' element={<Figuras />} />
           <Route path='/consolas' element={<Consolas url={'./consolas/consolas.json'} />} />
@@ -23,8 +22,6 @@ function App() {
           <Route path='/juegos' element={<Juegos url={'./juegos/juegos.json'} />} />
           <Route path='/juegos/:id' element={<JuegosDetalles />} />
           <Route path='*' element={<h1>Error la ruta ingresada no es correcta</h1>} />
-          {/* Navigate te permite redireccionar a otras rutas tenes q importarlo*/}
-          {/* <Route path='*' element={<Navigate to='/' />} /> */}
         </Routes>
       </Layout>
       </BrowserRouter>

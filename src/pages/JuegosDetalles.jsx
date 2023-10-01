@@ -22,7 +22,8 @@ export const JuegosDetalles = () => {
                     titulo={juego.name}
                     descripcion={juego.descripcion}
                     precio={juego.precio}
-                    style={{ width: "18rem", height: "710px" }}>
+                    style={{ width: "18rem", height: "710px" }}
+                    stock={juego.stock}>
                     <img className='imgProductos' src={juego.url} alt={juego.name} />
                 </Item>)}
             </ul>

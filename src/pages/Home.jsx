@@ -23,7 +23,7 @@ export const Home = () => {
             <ItemListContainer mensaje="Bienvenido a la tienda!!!"/>
             <div className='divUlCardsContainer'>
                 <ul className='ulCards'>
-                    {productos.map((producto) => <Item key={producto.id} titulo={producto.nombre} descripcion={producto.descripcion} precio={producto.precio}>
+                    {productos.map((producto) => <Item key={producto.id} titulo={producto.nombre} descripcion={producto.descripcion} precio={producto.precio} stock={producto.stock}>
                         <img className='imgProductos' src={producto.url} alt={producto.nombre} />
                     </Item>)}
                 </ul>
