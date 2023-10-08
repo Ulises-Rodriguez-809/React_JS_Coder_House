@@ -8,7 +8,6 @@ const array = [
 
 export const Consolas = ({ url }) => {
 
-
     const productoCategoria = url.substring(2, 10);
 
     return <Productos url={url} productoCategoria={productoCategoria} array={array} />

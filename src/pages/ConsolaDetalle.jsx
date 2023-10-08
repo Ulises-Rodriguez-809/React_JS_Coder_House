@@ -21,8 +21,9 @@ export const ConsolaDetalle = () => {
         <div className='divUlCardsContainer'>
             <ul className='ulCards'>
                 {productoElegido && productoElegido.consolas.map((consolaProduct) => <Item 
-                key={consolaProduct.id} 
-                titulo={consolaProduct.consola} 
+                key={consolaProduct.id}
+                url={`consolas/${id}/${consolaProduct.id}`}
+                titulo={consolaProduct.name} 
                 descripcion={consolaProduct.descripcion} 
                 precio={consolaProduct.precio}
                 style={{width : "18rem",height : "710px"}}

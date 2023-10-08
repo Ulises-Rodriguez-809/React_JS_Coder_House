@@ -1,8 +1,9 @@
 import React from 'react'
 import { BtnComprar } from './BtnComprar'
 import { Counter } from './Counter'
+import { BtnDetalle } from './BtnDetalle'
 
-export const Item = ({ titulo, descripcion, precio, style={width : "18rem", height : "fit-content"}, stock ,children }) => {
+export const Item = ({ url,titulo, descripcion, precio, style={width : "18rem", height : "fit-content"}, stock ,children }) => {
     return (
         <>
             <div className="card" style={style}>
@@ -14,7 +15,10 @@ export const Item = ({ titulo, descripcion, precio, style={width : "18rem", heig
                 </div>
                 <div className='divComprar'>
                     <Counter stock={stock}/>
-                    <BtnComprar />
+                    <div className='btnContinaer'>
+                        <BtnDetalle url={url}/>
+                        <BtnComprar />
+                    </div>
                 </div>
             </div>
         </>

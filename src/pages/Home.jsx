@@ -3,9 +3,10 @@ import { loadingFun } from '../funJS/asyncMocks';
 import useFetch from '../customHooks/useFetch';
 import { Item } from '../components/Item';
 import { ItemListContainer } from '../components/ItemListContainer';
+import { Loading } from '../components/Loading';
 
-export const Home = () => {
-    const { productos } = useFetch('./t10Productos/t10P.json');
+export const Home = ({ url }) => {
+    const { productos } = useFetch(url);
 
     const [loading, setLoading] = useState(false);
 
@@ -14,20 +15,28 @@ export const Home = () => {
             .then(cargando => setLoading(cargando))
     }, [])
 
-    if (!loading) {
-        return <h1 className='cargandoTitulo'>Cargando los productos</h1>
-    }
+    // if (!loading) {
+    //     return <h1 className='cargandoTitulo'>Cargando los productos</h1>
+    // }
 
     return (
         <>
-            <ItemListContainer mensaje="Bienvenido a la tienda!!!"/>
-            <div className='divUlCardsContainer'>
-                <ul className='ulCards'>
-                    {productos.map((producto) => <Item key={producto.id} titulo={producto.nombre} descripcion={producto.descripcion} precio={producto.precio} stock={producto.stock}>
-                        <img className='imgProductos' src={producto.url} alt={producto.nombre} />
-                    </Item>)}
-                </ul>
-            </div>
+            {loading ? <div>
+                <ItemListContainer mensaje="Bienvenido a la tienda!!!" />
+                <div className='divUlCardsContainer'>
+                    <ul className='ulCards'>
+                        {productos.map((producto) => <Item
+                            key={producto.id}
+                            url={`${producto.id}`}
+                            titulo={producto.nombre}
+                            descripcion={producto.descripcion}
+                            precio={producto.precio}
+                            stock={producto.stock}>
+                            <img className='imgProductos' src={producto.url} alt={producto.nombre} />
+                        </Item>)}
+                    </ul>
+                </div>
+            </div> : <Loading />}
         </>
     )
 }

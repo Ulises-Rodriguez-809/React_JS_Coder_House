@@ -5,13 +5,14 @@ import { Item } from '../components/Item';
 export const Figuras = () => {
 
     const { productos } = useFetch('./figuras/figuras.json');
-    
+
     return (
         <>
             <div className='divUlCardsContainer'>
                 <ul className='ulCards'>
                     {productos && productos.map((figura) => <Item 
                     key={figura.id} 
+                    url={`figuras/${figura.id}`}
                     titulo={figura.name} 
                     descripcion={figura.descripcion} 
                     precio={figura.precio}

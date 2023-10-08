@@ -19,6 +19,7 @@ export const JuegosDetalles = () => {
             <ul className='ulCards'>
                 {productoElegido && productoElegido.juegos.map((juego) => <Item
                     key={juego.id}
+                    url={`juegos/${id}/${juego.id}`}
                     titulo={juego.name}
                     descripcion={juego.descripcion}
                     precio={juego.precio}

@@ -4,8 +4,15 @@ import { CantidadProductos } from './CantidadProductos';
 import { CarritoLi } from './CarritoLi';
 import { Precio } from './Precio';
 import { BtnComprar } from './BtnComprar';
+import { useContext } from 'react';
+import { Context } from '../context/Context';
 
 export const CardWidget = () => {
+
+    // esto tendrias q hacerlo tambien en los productos para q cuando le des a comprar te agregue el producto y la cantidad de ese producto al carrito
+    // luego tendrias q agregarlo al carrito y q te modifique el valor total
+    const {cartArr,setCartArr,total,setTotal} = useContext(Context);
+
     return (
         <>
             <div className="btn-group dropstart">
