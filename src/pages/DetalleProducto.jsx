@@ -1,20 +1,20 @@
 import React from 'react'
 import { useParams } from 'react-router-dom'
 import useFetch from '../customHooks/useFetch';
-import { ComporbarCategoria } from '../components/ComporbarCategoria';
 import { obtenerProducto } from '../funJS/obtenerProducto';
+import { ComporbarCategoria } from '../components/ComprobarCategoria';
 
 export const DetalleProducto = ({ url }) => {
 
     const { id } = useParams();
-    const paramsLength = Object.keys(useParams()).length === 1;
 
     const { productos } = useFetch(url);
 
-    const producto = obtenerProducto(id,productos,paramsLength);
+    const producto = obtenerProducto(id,productos);
 
     return (
         <>
+            {/* {producto && <ComporbarCategoria producto={producto} />} */}
             {producto && <ComporbarCategoria producto={producto} />}
             {/* {Object.keys(useParams()).length === 1 ? <div>
                 {producto && <ItemDetalle producto={producto}>
