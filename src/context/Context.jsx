@@ -5,18 +5,18 @@ import { createContext } from 'react'
 export const Context = createContext();
 
 export const ContextWrapper = ({children})=>{
-    // detalle
-    
-    
     // card
     const [cartArr, setCartArr] = useState([]);
-    const [total,setTotal] = useState(0);
+    const [productos,setProductos] = useState(0);
+    const [precioTotal,setPrecioTotal] = useState(0);
 
     const objetoProps = {
         cartArr,
         setCartArr,
-        total,
-        setTotal
+        productos,
+        setProductos,
+        precioTotal,
+        setPrecioTotal
     }
 
     return(

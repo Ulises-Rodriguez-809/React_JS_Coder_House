@@ -10,8 +10,6 @@ import { JuegosDetalles } from './pages/JuegosDetalles';
 import { ContextWrapper } from './context/Context';
 import { DetalleProducto } from './pages/DetalleProducto';
 
-
-// Te recomiendo que hagas una parte de consulta por id de producto,  por ejemplo: Dentro del menu figuras, mostrar quizas las imagenes y el  nombre y poner un boton de ver mas, y que cuando se clickea ese boton , ahi nos dirija a otra vista y nos muestre unicamente ese nombre, esa imagen y descripcion, precio y ahi el contador.  Me explico?
 function App() {
   return (
     <>

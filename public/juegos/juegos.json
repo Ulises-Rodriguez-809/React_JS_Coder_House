@@ -275,7 +275,7 @@
             {
                 "id": 1,
                 "name": "GAT: San Aandreas",
-                "precio": "$19.99",
+                "precio": 19.99,
                 "descripcion": " GTA San andreas es un juego de acción y aventura en un mundo abierto ambientado en los años 90, donde podrás explorar tres ciudades y realizar todo tipo de misiones y actividades.",
                 "url": "https://steamuserimages-a.akamaihd.net/ugc/433783265874720792/D0E18AFC98460208934FFE880E4FEB3F6D55B049/",
                 "stock" : 3
@@ -283,7 +283,7 @@
             {
                 "id": 2,
                 "name": "PGR 2",
-                "precio": "$9.99",
+                "precio": 9.99,
                 "descripcion": "Project Gotham Racing es un juego de carreras que combina la velocidad con el estilo, donde podrás competir con más de 100 coches por las calles de ciudades reales como Barcelona, Chicago o Hong Kong.",
                 "url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ7f11kcxj-X00T4A0gaPdxeJKB3kHkl-H0OJpdJmaXVKNgiA5OzvDKG9_Pbb7u5gjmXL4&usqp=CAU",
                 "stock" : 8
@@ -291,7 +291,7 @@
             {
                 "id": 3,
                 "name": "BT 3",
-                "precio": "$14.99",
+                "precio": 14.99,
                 "descripcion": "Burnout Takedown 3 es un juego de carreras que te anima a conducir de forma temeraria, provocando accidentes espectaculares y eliminando a tus rivales de la pista.",
                 "url": "https://m.media-amazon.com/images/I/51S96JC509L.jpg",
                 "stock" : 2
@@ -299,7 +299,7 @@
             {
                 "id": 4,
                 "name": "Halo 2",
-                "precio": "$19.99",
+                "precio": 19.99,
                 "descripcion": "Halo 2 es la secuela del aclamado juego de disparos en primera persona, que continúa la historia del Jefe Maestro y su lucha contra el Covenant, con una campaña épica y un multijugador adictivo.",
                 "url": "https://media.vandal.net/ivandal/12/63/1200x630/12/1230/2004728184119_1.jpg",
                 "stock" : 6
@@ -307,7 +307,7 @@
             {
                 "id": 5,
                 "name": "Ninja Gaiden",
-                "precio": "$14.99",
+                "precio": 14.99,
                 "descripcion": "Ninja Gaiden es un juego de acción y plataformas que te pone en la piel de Ryu Hayabusa, un ninja que debe enfrentarse a un malvado clan que busca revivir a un demonio ancestral.",
                 "url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTOFdKTrJJUtjuD16w0UReW1J1UDtnc1T0lR51ZyHQMdRNorSgEiGC4_DECpmJJBEkUgAE&usqp=CAU",
                 "stock" : 3
@@ -365,7 +365,7 @@
             {
                 "id": 1,
                 "name": "RDR 2",
-                "precio": "$59.99",
+                "precio": 59.99,
                 "descripcion": "Red Dead Redemption 2 es la precuela del exitoso juego de Rockstar, que te lleva al salvaje oeste a finales del siglo XIX, donde podrás vivir una aventura de forajidos, cazar, pescar, explorar y sobrevivir en un vasto mundo abierto.",
                 "url": "https://cdn.cdkeys.com/700x700/media/catalog/product/h/e/header_10_21_39_.jpg",
                 "stock" : 5
@@ -373,7 +373,7 @@
             {
                 "id": 2,
                 "name": "Elden Ring",
-                "precio": "$69.99",
+                "precio": 69.99,
                 "descripcion": "El nuevo juego de FromSoftware y Bandai Namco, que mezcla la jugabilidad de Dark Souls con un mundo abierto diseñado por George R.R. Martin, el autor de Canción de hielo y fuego, donde podrás enfrentarte a desafiantes enemigos y jefes en un entorno fantástico y oscuro.",
                 "url": "https://i.ytimg.com/vi/l1i0RkxxiLs/maxresdefault.jpg",
                 "stock" : 7
@@ -381,7 +381,7 @@
             {
                 "id": 3,
                 "name": "Forza Horizon 4",
-                "precio": "$59.99",
+                "precio": 59.99,
                 "descripcion": "La cuarta entrega de la saga de carreras en mundo abierto, que te permite conducir más de 450 coches por el Reino Unido, con un sistema de estaciones dinámico que cambia el clima y el terreno.",
                 "url": "https://store-images.s-microsoft.com/image/apps.10138.14343301090572358.2000000000007864208.debe5522-7996-4281-a4e5-e5d8713d27d9",
                 "stock" : 10
@@ -389,7 +389,7 @@
             {
                 "id": 4,
                 "name": "SSDT",
-                "precio": "$59.99",
+                "precio": 59.99,
                 "descripcion": "Sekiro: Shadows Die Twice es un juego de FromSoftware, que te traslada al Japón feudal del siglo XVI, donde encarnas a un shinobi que debe rescatar a su maestro secuestrado, usando armas, herramientas y habilidades ninja para superar a sus adversarios.",
                 "url": "https://locosxlosjuegos.com/wp-content/uploads/2019/03/portada-3.jpg",
                 "stock" : 2
@@ -402,7 +402,7 @@
             {
                 "id": 1,
                 "name": "Forza Horizon 5",
-                "precio": "$59.99",
+                "precio": 59.99,
                 "descripcion": "La quinta entrega de la saga de carreras en mundo abierto, que te lleva a explorar y competir en el vibrante y diverso México, con un apartado gráfico impresionante y un clima realista.",
                 "url": "https://s3.abcstatics.com/media/tecnologia/2021/12/02/forza-9-kFVC--620x349@abc.jpg",
                 "stock" : 7
@@ -410,7 +410,7 @@
             {
                 "id": 2,
                 "name": "Halo Infinite",
-                "precio": "$59.99",
+                "precio": 59.99,
                 "descripcion": "La esperada continuación de la saga de disparos en primera persona, que retoma la historia del Jefe Maestro y su enfrentamiento contra una nueva amenaza, con una campaña emocionante y un multijugador renovado.",
                 "url": "https://i.ytimg.com/vi/8AVHOJlOWJg/maxresdefault.jpg",
                 "stock" : 2
@@ -418,7 +418,7 @@
             {
                 "id": 3,
                 "name": "Psychonauts 2",
-                "precio": "$59.99",
+                "precio": 59.99,
                 "descripcion": "La secuela del aclamado juego de plataformas y humor, que te pone en la piel de Raz, un joven con poderes psíquicos que debe infiltrarse en las mentes de diferentes personajes para resolver sus problemas y descubrir sus secretos.",
                 "url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQesBXwxcesIW3ErVkOETeZgnHQqGDQI4Uo0pjVBRPCOXHdTfadG8gyyBCAaD-6m_nRBRw&usqp=CAU",
                 "stock" : 6
@@ -426,7 +426,7 @@
             {
                 "id": 4,
                 "name": "Resident Evil Village",
-                "precio": "$59.99",
+                "precio": 59.99,
                 "descripcion": "La octava entrega de la saga de terror y supervivencia, que sigue la historia de Ethan Winters tras los eventos de Resident Evil 7, llevándolo a un misterioso pueblo europeo donde tendrá que enfrentarse a criaturas horripilantes y a la temible Lady Dimitrescu.",
                 "url": "https://img.youtube.com/vi/9-_d2Ja_3AA/maxresdefault.jpg",
                 "stock" : 3
@@ -434,7 +434,7 @@
             {
                 "id": 5,
                 "name": "It Takes Two",
-                "precio": "$39.99",
+                "precio": 39.99,
                 "descripcion": "Un juego de aventuras y cooperación, que te invita a jugar con un amigo o pareja para controlar a Cody y May, una pareja al borde del divorcio que se convierten en muñecos por un hechizo, y que tendrán que superar diversos obstáculos y desafíos para recuperar su forma humana y su relación.",
                 "url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQu1MrhtL8EzbRIvmrMEHgR-mSDFenOG5r6g-r9edapIdjn4Dikj2AfbypbfBnEyfPmPVQ&usqp=CAU",
                 "stock" : 3

@@ -14,7 +14,6 @@ export const DetalleProducto = ({ url }) => {
 
     return (
         <>
-            {/* {producto && <ComporbarCategoria producto={producto} />} */}
             {producto && <ComporbarCategoria producto={producto} />}
             {/* {Object.keys(useParams()).length === 1 ? <div>
                 {producto && <ItemDetalle producto={producto}>

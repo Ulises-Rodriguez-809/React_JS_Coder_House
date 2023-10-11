@@ -1,6 +1,6 @@
 import React from 'react'
 import { Counter } from './Counter'
-import { BtnComprar } from './BtnComprar'
+import { BtnAñadir } from './BtnAñadir';
 
 export const ItemDetalle = ({producto,children}) => {
 
@@ -19,7 +19,7 @@ export const ItemDetalle = ({producto,children}) => {
                     <p>stock: {stock}</p>
                     <div>
                         <Counter stock={stock} />
-                        <BtnComprar />
+                        <BtnAñadir />
                     </div>
                 </div>
             </div>
