@@ -10,6 +10,8 @@ import { JuegosDetalles } from './pages/JuegosDetalles';
 import { ContextWrapper } from './context/Context';
 import { DetalleProducto } from './pages/DetalleProducto';
 
+//cambio para ver si funciona la clonacion del repo
+
 function App() {
   return (
     <>
