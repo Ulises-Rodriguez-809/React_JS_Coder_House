@@ -4,6 +4,7 @@ import useFetch from '../customHooks/useFetch';
 import { Item } from '../components/Item';
 import { ItemListContainer } from '../components/ItemListContainer';
 import { Loading } from '../components/Loading';
+import { addDoc, collection, doc, getDoc, getDocs, getFirestore, setDoc } from 'firebase/firestore';
 
 export const Home = ({ url }) => {
     const { productos } = useFetch(url);
@@ -15,9 +16,31 @@ export const Home = ({ url }) => {
             .then(cargando => setLoading(cargando))
     }, [])
 
-    // if (!loading) {
-    //     return <h1 className='cargandoTitulo'>Cargando los productos</h1>
-    // }
+   
+
+
+    //><
+    useEffect(() => {
+        const db = getFirestore();
+
+        const juegosRetro = doc(db, "Items", "VWPtEj6KWDHH84wZVFA8");
+
+        //este para traer una sola coleccion
+        getDoc(juegosRetro)
+            .then(snapshot => {
+                if (snapshot.exists()) {
+                    console.log(snapshot)
+                }
+            })
+
+        //trae todas las colecciones
+        const todasLasColecciones = collection(db, "Items");
+        getDocs(todasLasColecciones)
+            .then(snapshot => {
+                console.log(snapshot)
+            })
+
+    }, []);
 
     return (
         <>

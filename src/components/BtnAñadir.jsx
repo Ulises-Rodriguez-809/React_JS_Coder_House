@@ -1,6 +1,7 @@
 import React, { useContext } from 'react'
 import { Context } from '../context/Context';
 
+
 export const BtnAñadir = ({ nombre, precio, cantidad }) => {
 
     const { cartArr, setCartArr, setPrecioTotal, setProductos } = useContext(Context);
@@ -20,6 +21,7 @@ export const BtnAñadir = ({ nombre, precio, cantidad }) => {
                 ...cartArr,
                 producto
             ]);
+            
 
             setPrecioTotal(prevTotal => (prevTotal + precio) * cantidad);
 
