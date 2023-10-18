@@ -10,8 +10,6 @@ import { JuegosDetalles } from './pages/JuegosDetalles';
 import { ContextWrapper } from './context/Context';
 import { DetalleProducto } from './pages/DetalleProducto';
 
-
-//as
 function App() {
   return (
     <>

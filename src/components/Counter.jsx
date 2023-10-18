@@ -10,8 +10,6 @@ export const Counter = ({ stock, setCantidad }) => {
             setCantidad(prevCantidad => prevCantidad + 1);
         }
 
-        // (stock > count) && setCount(prevCount => prevCount + 1);
-
     }
 
     const decrementar = () => {
@@ -19,7 +17,6 @@ export const Counter = ({ stock, setCantidad }) => {
             setCount(prevCount => prevCount - 1);
             setCantidad(prevCantidad => prevCantidad - 1);
         }
-        // (count !== 0 ) && setCount(prevCount => prevCount - 1); 
     }
 
     return (
