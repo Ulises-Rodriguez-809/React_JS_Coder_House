@@ -1,15 +1,16 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
-import useFetch from '../customHooks/useFetch'
+import { useGetFSC } from '../customHooks/useGetFSColecction';
 
-export const Productos = ({ url, productoCategoria, array = null }) => {
-    
-    const { productos } = useFetch(url);
+export const Productos = ({ url, array = null }) => {
+
+    const {productos} = useGetFSC(url);
+
     return (
         <section>
             <ul className='ulLinkProductos'>
                 {productos.map((producto, index) => <li key={producto.id}>
-                    <Link className='linkProductos' to={`/${productoCategoria}/${producto.id}`}>
+                    <Link className='linkProductos' to={`/${url}/${producto.id}`}>
                         <div className='divLinkInfoContainer'>
                             <div>
                                 {producto.id}

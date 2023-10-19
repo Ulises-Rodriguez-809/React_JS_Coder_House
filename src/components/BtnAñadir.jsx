@@ -8,10 +8,8 @@ export const BtnAñadir = ({ nombre, precio, cantidad }) => {
     const comprar = () => {
 
         const indexProducto = cartArr.findIndex((producto) => producto.name === nombre);
-        console.log(indexProducto)
 
         if (cantidad > 0) {
-
 
             if (indexProducto > -1) {
                 cartArr[indexProducto].cantidad += cantidad;
@@ -30,7 +28,6 @@ export const BtnAñadir = ({ nombre, precio, cantidad }) => {
 
             }
             
-
             setPrecioTotal(prevTotal => (prevTotal + precio) * cantidad);
 
             setProductos(prevTotal => prevTotal + cantidad);

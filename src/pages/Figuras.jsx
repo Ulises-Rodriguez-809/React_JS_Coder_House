@@ -1,13 +1,10 @@
-import React, { useEffect } from 'react'
-import useFetch from '../customHooks/useFetch';
+import React from 'react';
 import { Item } from '../components/Item';
-import { addDoc, collection, getFirestore } from 'firebase/firestore';
+import { useGetFSC } from '../customHooks/useGetFSColecction';
 
 export const Figuras = () => {
 
-
-    
-    const { productos } = useFetch('./figuras/figuras.json');
+    const {productos} = useGetFSC("figuras");
 
     return (
         <>

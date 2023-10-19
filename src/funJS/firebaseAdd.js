@@ -1,7 +1,15 @@
+import { useEffect } from "react";
 import { addDoc, collection, getFirestore } from "firebase/firestore";
 
-const db = getFirestore();
 
-const aux = collection(db, nombreColeccion)
+export const addToFireStore = (nombreColeccion,arr)=>{
 
-productos.forEach(producto => addDoc(aux, producto))
+    useEffect(() => {
+        const db = getFirestore();
+        
+        const aux = collection(db, nombreColeccion);
+        
+        arr.forEach(item => addDoc(aux, item));
+    }, [])
+    
+}

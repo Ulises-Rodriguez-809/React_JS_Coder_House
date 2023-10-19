@@ -1,7 +1,7 @@
 import React from 'react'
 import { useParams } from 'react-router-dom'
 import { Item } from '../components/Item';
-import useFetch from '../customHooks/useFetch';
+import { useGetFSC } from '../customHooks/useGetFSColecction';
 
 export const ConsolaDetalle = () => {
     const { id } = useParams();
@@ -9,7 +9,10 @@ export const ConsolaDetalle = () => {
     //POR ALGUN MOTIVO DENTRO DE CONSOLADETALLES.JSX NO
     //CREO Q SE DEBE A LAS <ROUTE PATH=/CONSOLA/:ID>
     //XQ SI LO PONES <ROUTE PATH=/XBOX> PONER CADA CONSOLA CON SU PROPIA RUTA Y NO COMO SUBRUTA ANDA BIEN
-    const { productos } = useFetch('/consolas/consolas.json');
+    // const { productos } = useFetch('/consolas/consolas.json');
+
+    const {productos} = useGetFSC("consolas");
+
 
     const obtenerProducto = (id) => {
         return productos.find(producto => producto.id === id);

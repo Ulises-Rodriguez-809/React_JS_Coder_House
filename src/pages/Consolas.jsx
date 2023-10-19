@@ -6,9 +6,7 @@ const array = [
     "https://m.media-amazon.com/images/I/81s7B+Als-L._SL1500_.jpg"
 ]
 
-export const Consolas = ({ url }) => {
+export const Consolas = () => {
 
-    const productoCategoria = url.substring(2, 10);
-
-    return <Productos url={url} productoCategoria={productoCategoria} array={array} />
+    return <Productos url={"consolas"} array={array} />
 }
