@@ -3,14 +3,15 @@ import { Context } from '../context/Context';
 
 export const BtnAñadir = ({ nombre, precio, cantidad }) => {
 
-    const { setPrecioTotal, cart, setCart, calcularPrecioTotal } = useContext(Context);
+    const { cart, setCart, calcularPrecioTotal } = useContext(Context);
     
     const añadir = () => {
         
         const { productos } = cart;
-        let auxPrecio = 0;
         const indexProducto = cart["productos"].findIndex((producto) => producto.name === nombre);
 
+
+        // FALTA MODIFICAR EL FIRESTORE CUANDO LE DES AÑADIR VEA SI HAY STOCK SUFICIENTE Y MODIFIQUE LA db
         if (cantidad > 0) {
 
             if (indexProducto > -1) {
@@ -29,13 +30,10 @@ export const BtnAñadir = ({ nombre, precio, cantidad }) => {
 
             }
 
-            auxPrecio = calcularPrecioTotal();
-
-            setPrecioTotal(auxPrecio);
-
             setCart({
                 ...cart,
-                productos
+                productos,
+                precioTotal : calcularPrecioTotal()
             })
         }
     }

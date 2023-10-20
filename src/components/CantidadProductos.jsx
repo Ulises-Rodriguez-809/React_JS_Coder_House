@@ -7,7 +7,7 @@ export const CantidadProductos = ({style={ top: 15, right: 50 }}) => {
 
     return (
         <span className="position-absolute translate-middle badge rounded-pill bg-success" style={style}>
-            {cart.productos.length}
+            {cart["productos"].length}
         </span>
     )
 }

@@ -7,31 +7,40 @@ export const Context = createContext();
 export const ContextWrapper = ({ children }) => {
     // card
     const [cart, setCart] = useState({
-        cliente: {
+        productos : [],
+        precioTotal : 0
+    });
+
+    const [cliente,setCliente] = useState(
+        {
             name: "juan",
-            cell: 5555555,
+            apellido: "mishu",
+            cell: "5555555",
             email: "juan@gmail.com",
             email2: "juan@gmail.com"
-        },
-        productos: []
-    })
-    const [precioTotal,setPrecioTotal] = useState(0);
+        }
+    )
+
+
+    {/* aca falta hacer una opcion para loguearse desde la la navbar */}
+    const [isLogin, setIsLogin] = useState(true);
+
 
     const calcularPrecioTotal = () => {
-        const { productos } = cart;
-        return productos.reduce((acumulador, producto) => acumulador + producto.cantidad * producto.precio, 0);
+        return cart["productos"].reduce((acumulador, producto) => acumulador + producto.cantidad * producto.precio, 0);
     };
 
     const objetoProps = {
-        precioTotal,
-        setPrecioTotal,
         cart,
         setCart,
-        calcularPrecioTotal
+        cliente,
+        setCliente,
+        calcularPrecioTotal,
+        isLogin,
+        setIsLogin
     }
 
     return (
-        // <Context.Provider value={{cartArr,setCartArr,total,setTotal}}>
         <Context.Provider value={{ ...objetoProps }}>
             {children}
         </Context.Provider>

@@ -9,6 +9,7 @@ import { Juegos } from './pages/Juegos';
 import { JuegosDetalles } from './pages/JuegosDetalles';
 import { ContextWrapper } from './context/Context';
 import { DetalleProducto } from './pages/DetalleProducto';
+import { Checkout } from './pages/Checkout';
 
 function App() {
   return (
@@ -28,6 +29,7 @@ function App() {
               <Route path='/juegos' element={<Juegos />} />
               <Route path='/juegos/:id' element={<JuegosDetalles />} />
               <Route path='/juegos/:id/:juego' element={<DetalleProducto url={'juegos'} />} />
+              <Route path='/checkout' element={<Checkout />} />
               <Route path='*' element={<h1>Error la ruta ingresada no es correcta</h1>} />
             </Routes>
           </Layout>
