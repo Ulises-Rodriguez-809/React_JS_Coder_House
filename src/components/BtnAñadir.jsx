@@ -3,36 +3,42 @@ import { Context } from '../context/Context';
 
 export const BtnAñadir = ({ nombre, precio, cantidad }) => {
 
-    const { cartArr, setCartArr, setPrecioTotal, setProductos } = useContext(Context);
-
-    const comprar = () => {
-
-        const indexProducto = cartArr.findIndex((producto) => producto.name === nombre);
+    const { setPrecioTotal, cart, setCart, calcularPrecioTotal } = useContext(Context);
+    
+    const añadir = () => {
+        
+        const { productos } = cart;
+        let auxPrecio = 0;
+        const indexProducto = cart["productos"].findIndex((producto) => producto.name === nombre);
 
         if (cantidad > 0) {
 
             if (indexProducto > -1) {
-                cartArr[indexProducto].cantidad += cantidad;
+                productos[indexProducto].cantidad += cantidad;
 
-            }else{
+            } else {
+
                 const producto = {
-                    id: cartArr.length,
+                    id: cart["productos"].length,
                     name: nombre,
-                    cantidad
+                    cantidad,
+                    precio
                 }
-    
-                setCartArr([
-                    ...cartArr,
-                    producto
-                ]);
+
+                productos.push(producto);
 
             }
-            
-            setPrecioTotal(prevTotal => (prevTotal + precio) * cantidad);
 
-            setProductos(prevTotal => prevTotal + cantidad);
+            auxPrecio = calcularPrecioTotal();
+
+            setPrecioTotal(auxPrecio);
+
+            setCart({
+                ...cart,
+                productos
+            })
         }
     }
 
-    return <button type="button" onClick={comprar}>Añadir</button>
+    return <button type="button" onClick={añadir}>Añadir</button>
 }

@@ -1,20 +1,32 @@
 import React, { useContext } from 'react'
 import { Context } from '../context/Context';
 
-export const BtnOpcionesCompra = ({opcion}) => {
+export const BtnOpcionesCompra = ({ opcion }) => {
 
-    const {setCartArr,setProductos,setPrecioTotal} = useContext(Context);
+    const { setCart, setPrecioTotal } = useContext(Context);
 
-    const opciones = (e)=>{
-        const {target} = e;
-        const {value} = target;
+    const opciones = (e) => {
+        const { target } = e;
+        const { value } = target;
 
         if (value === "Reset") {
-            setCartArr([]);
-            setProductos(0);
+
+            setCart({
+                cliente: {
+                    name: "",
+                    cell: "",
+                    email: "",
+                    email2: ""
+                },
+                productos: []
+            });
+
             setPrecioTotal(0);
         }
-        else{
+        else {
+            //navegar a link donde te muestra el resumen de la compra
+            //podes eliminar algun q otro producto de forma individual
+            //y el formulario donde pones los datos q se cargan a las ordenes de firestore
             alert("Tus productos fueron comprados con exito");
         }
     }

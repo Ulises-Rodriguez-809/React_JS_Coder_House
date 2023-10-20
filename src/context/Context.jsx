@@ -4,24 +4,35 @@ import { createContext } from 'react'
 
 export const Context = createContext();
 
-export const ContextWrapper = ({children})=>{
+export const ContextWrapper = ({ children }) => {
     // card
-    const [cartArr, setCartArr] = useState([]);
-    const [productos,setProductos] = useState(0);
+    const [cart, setCart] = useState({
+        cliente: {
+            name: "juan",
+            cell: 5555555,
+            email: "juan@gmail.com",
+            email2: "juan@gmail.com"
+        },
+        productos: []
+    })
     const [precioTotal,setPrecioTotal] = useState(0);
 
+    const calcularPrecioTotal = () => {
+        const { productos } = cart;
+        return productos.reduce((acumulador, producto) => acumulador + producto.cantidad * producto.precio, 0);
+    };
+
     const objetoProps = {
-        cartArr,
-        setCartArr,
-        productos,
-        setProductos,
         precioTotal,
-        setPrecioTotal
+        setPrecioTotal,
+        cart,
+        setCart,
+        calcularPrecioTotal
     }
 
-    return(
+    return (
         // <Context.Provider value={{cartArr,setCartArr,total,setTotal}}>
-        <Context.Provider value={{...objetoProps}}>
+        <Context.Provider value={{ ...objetoProps }}>
             {children}
         </Context.Provider>
     )

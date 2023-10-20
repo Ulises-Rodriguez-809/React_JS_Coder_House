@@ -9,7 +9,7 @@ import { BtnOpcionesCompra } from './BtnOpcionesCompra';
 
 export const CardWidget = () => {
 
-    const { cartArr } = useContext(Context);
+    const { cart } = useContext(Context);
 
     return (
         <>
@@ -19,7 +19,7 @@ export const CardWidget = () => {
                     <CarritoImg />
                 </button>
                 <ul className="dropdown-menu ulCarrito">
-                    {cartArr.map(producto => <CarritoLi key={producto.id} nombreProducto={producto.name} cantidad={producto.cantidad}/>)}
+                    {cart["productos"].map(producto => <CarritoLi key={producto.id} nombreProducto={producto.name} cantidad={producto.cantidad}/>)}
                     <li>
                         <ul className='ulComprar'>
                             <Precio />
