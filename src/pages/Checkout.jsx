@@ -7,11 +7,41 @@ import { BtnRealizarCompra } from '../components/BtnRealizarCompra';
 export const Checkout = () => {
     const { cart, precioTotal, isLogin } = useContext(Context);
 
+
+    if (cart["productos"].length === 0) {
+        return <h1>El carrito esta vacio</h1>
+    }
+
     return (
         <>
             <div className='container-fluid'>
                 <div className='container-fluid'>
-                    Resumen de compra
+                    <div>
+                        Resumen de compra
+                    </div>
+                    aca capaz un contenedor con grid
+                    <div className='container-fluid'>
+                        <ul className='ulResumenCompra'>
+                            <li>
+                                Producto
+                            </li>
+                            <li>
+                                Cantidad
+                            </li>
+                            <li>
+                                Precio Unitario
+                            </li>
+                            <li>
+                                Precio Total
+                            </li>
+                        </ul>
+                        <ul className='ulResumenCompra'>
+                            <li>Yuna</li>
+                            <li>2</li>
+                            <li>$50</li>
+                            <li>100</li>
+                        </ul>
+                    </div>
                 </div>
                 {!isLogin ? <div className='container-fluid'>
                     <div className='container-fluid'>

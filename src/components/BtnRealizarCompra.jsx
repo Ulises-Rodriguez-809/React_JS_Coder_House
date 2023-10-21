@@ -1,23 +1,27 @@
 import React, { useContext } from 'react'
 import { Context } from '../context/Context'
+import { comprobarDatos } from '../funJS/comprobarDatos';
 
-
-const comprobarCampos = (e)=>{
-
-    e.preventDefault();
-
-}
 
 export const BtnRealizarCompra = () => {
 
-    const { cart } = useContext(Context);
+    const { cliente } = useContext(Context);
+
+    const realizarCompra = () => {
+        comprobarDatos(cliente);
+        
+        if (comprobarDatos(cliente)) {
+            
+            console.log("afjg")
+        }
+    }
 
     return (
         <>
-            
-            // aca la logia de firestore para q se guarden las ordenes
-            <div>BtnRealizarCompra</div>
-            <button type='submit' onSubmit={comprobarCampos}>Confirmar Compra</button>
+
+            el btn tiene q guardar las ordenes en firestore
+            <button type='button' onClick={realizarCompra}>Confirmar Compra</button>
+
         </>
     )
 }

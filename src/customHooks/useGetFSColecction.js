@@ -21,14 +21,17 @@ export const useGetFSC = (coleccion) => {
                         aux.push(producto.data())
                     })
 
-                    aux.sort((a, b) => a.id - b.id)
+                    aux.sort((a, b) => {
+                        if (a.id > b.id) return 1;
+                        if (a.id < b.id) return -1;
+                        return 0;
+                    })
 
                     setProductos([...aux])
 
                 }
 
             })
-
 
     }, [])
 

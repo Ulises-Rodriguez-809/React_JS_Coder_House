@@ -22,11 +22,6 @@ export const BtnOpcionesCompra = ({ opcion }) => {
 
         }
         else {
-            //navegar a link donde te muestra el resumen de la compra
-            //podes eliminar algun q otro producto de forma individual
-            //y el formulario donde pones los datos q se cargan a las ordenes de firestore
-            //cambia las descripciones en firestore xq estan muy largas y se rompen los estilos
-            //o modifica el .json y volvelos a subir ahora con un campo nuevo q sea descripcion 2 o mas corta o algo asi
             navigate("/checkout");
         }
     }

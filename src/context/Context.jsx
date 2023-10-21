@@ -11,19 +11,17 @@ export const ContextWrapper = ({ children }) => {
         precioTotal : 0
     });
 
-    const [cliente,setCliente] = useState(
-        {
-            name: "juan",
-            apellido: "mishu",
-            cell: "5555555",
-            email: "juan@gmail.com",
-            email2: "juan@gmail.com"
-        }
-    )
+    const [cliente,setCliente] = useState({
+        name : "",
+        apellido : "",
+        celular : "",
+        email : "",
+        email2 : ""
+    })
 
 
     {/* aca falta hacer una opcion para loguearse desde la la navbar */}
-    const [isLogin, setIsLogin] = useState(true);
+    const [isLogin, setIsLogin] = useState(false);
 
 
     const calcularPrecioTotal = () => {

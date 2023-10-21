@@ -254,3 +254,12 @@ ul {
   width: 40rem;
   height: 30rem;
 }
+
+
+
+/* RESUMEN DE COMPRA */
+.ulResumenCompra{
+  display: flex;
+  justify-content: space-between;
+  list-style: none;
+}

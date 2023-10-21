@@ -3,30 +3,39 @@ import { Context } from '../context/Context'
 
 export const Formulario = () => {
 
-    const {cart,setCart} = useContext(Context);
+    const {cliente,setCliente} = useContext(Context);
+
+    const datosCliente = (e)=>{
+
+        setCliente({
+            ...cliente,
+            [e.target.id] : e.target.value
+        })
+
+    }
 
     return (
         <>
             <div className='container-fluid'>
                 <div className="mb-3">
-                    <label for="nombre" className="form-label">Nombre</label>
-                    <input type='text' className="form-control" id="nombre" placeholder="ingrese su nombre" />
+                    <label htmlFor="name" className="form-label">Nombre</label>
+                    <input type='text' onChange={datosCliente} className="form-control" id="name" placeholder="ingrese su nombre" />
                 </div>
                 <div className="mb-3">
-                    <label for="apellido" className="form-label">Apellido</label>
-                    <input type='text' className="form-control" id="apellido" placeholder="ingrese su apellido" />
+                    <label htmlFor="apellido" className="form-label">Apellido</label>
+                    <input type='text' onChange={datosCliente} className="form-control" id="apellido" placeholder="ingrese su apellido" />
                 </div>
                 <div className="mb-3">
-                    <label for="celular" className="form-label">Celular</label>
-                    <input type='number' className="form-control" id="celular" placeholder="ingrese su numero" />
+                    <label htmlFor="celular" className="form-label">Celular</label>
+                    <input type='number' onChange={datosCliente} className="form-control" id="celular" placeholder="ingrese su numero" />
                 </div>
                 <div className="mb-3">
-                    <label for="email" className="form-label">Email</label>
-                    <input type="email" className="form-control" id="email" placeholder="ingrese su email" />
+                    <label htmlFor="email" className="form-label">Email</label>
+                    <input type="email" onChange={datosCliente} className="form-control" id="email" placeholder="ingrese su email" />
                 </div>
                 <div className="mb-3">
-                    <label for="email2" className="form-label">Confirmar Email</label>
-                    <input type="email" className="form-control" id="email2" placeholder="cofirme su email" />
+                    <label htmlFor="email2" className="form-label">Confirmar Email</label>
+                    <input type="email" onChange={datosCliente} className="form-control" id="email2" placeholder="cofirme su email" />
                 </div>
             </div>
         </>
