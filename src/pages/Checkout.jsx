@@ -21,26 +21,28 @@ export const Checkout = () => {
                     </div>
                     aca capaz un contenedor con grid
                     <div className='container-fluid'>
-                        <ul className='ulResumenCompra'>
-                            <li>
-                                Producto
-                            </li>
-                            <li>
-                                Cantidad
-                            </li>
-                            <li>
-                                Precio Unitario
-                            </li>
-                            <li>
-                                Precio Total
-                            </li>
-                        </ul>
-                        <ul className='ulResumenCompra'>
-                            <li>Yuna</li>
-                            <li>2</li>
-                            <li>$50</li>
-                            <li>100</li>
-                        </ul>
+                        <div className='resumenContainer'>
+                            <ul className='ulResumenCompra'>
+                                <li>
+                                    Producto
+                                </li>
+                                <li>
+                                    Cantidad
+                                </li>
+                                <li>
+                                    Precio Unitario
+                                </li>
+                                <li>
+                                    Precio Total
+                                </li>
+                            </ul>
+                            <ul className='ulResumenCompra'>
+                                <li>Yuna</li>
+                                <li>2</li>
+                                <li>$50</li>
+                                <li>100</li>
+                            </ul>
+                        </div>
                     </div>
                 </div>
                 {!isLogin ? <div className='container-fluid'>

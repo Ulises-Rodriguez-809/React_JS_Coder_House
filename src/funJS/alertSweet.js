@@ -1,10 +1,10 @@
 import Swal from 'sweetalert2'
 
 
-export const alertSweet = (msg)=>{
+export const alertSweet = (icono,titulo,msg)=>{
     Swal.fire({
-        icon: 'error',
-        title: 'Error',
+        icon: `${icono}`,
+        title: `${titulo}`,
         text: `${msg}`,
     })
 }

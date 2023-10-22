@@ -258,6 +258,10 @@ ul {
 
 
 /* RESUMEN DE COMPRA */
+.resumenContainer{
+  
+}
+
 .ulResumenCompra{
   display: flex;
   justify-content: space-between;

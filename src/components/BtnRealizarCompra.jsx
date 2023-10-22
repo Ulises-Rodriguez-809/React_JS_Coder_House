@@ -1,27 +1,37 @@
 import React, { useContext } from 'react'
 import { Context } from '../context/Context'
 import { comprobarDatos } from '../funJS/comprobarDatos';
+import { addToFireStore } from '../funJS/firebaseAdd';
+import { alertSweet } from '../funJS/alertSweet';
 
 
 export const BtnRealizarCompra = () => {
 
-    const { cliente } = useContext(Context);
+    const { cart,cliente,isLogin } = useContext(Context);
 
     const realizarCompra = () => {
         comprobarDatos(cliente);
         
-        if (comprobarDatos(cliente)) {
+        if (comprobarDatos(cliente) || isLogin) {
+
+            const orden = [
+                {
+                    clienteDatos : {...cliente},
+                    cartDatos : {...cart}
+                }
+            ]
             
-            console.log("afjg")
+            addToFireStore("ordenes",orden);
+
+            alertSweet("success","Todo correcto","La compra se realizo con exito");
+            //falta mostrar id del comprador en el alert prodria ser
+            //FALTA Q MODIFIQUE EL STOCK DE LOS PRODUCTOS
         }
     }
 
     return (
         <>
-
-            el btn tiene q guardar las ordenes en firestore
             <button type='button' onClick={realizarCompra}>Confirmar Compra</button>
-
         </>
     )
 }
