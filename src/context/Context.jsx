@@ -19,7 +19,6 @@ export const ContextWrapper = ({ children }) => {
         email2 : ""
     })
 
-    const [idCompra, setIdCompra] = useState("");
 
 
     {/* aca falta hacer una opcion para loguearse desde la la navbar */}
@@ -37,9 +36,7 @@ export const ContextWrapper = ({ children }) => {
         setCliente,
         calcularPrecioTotal,
         isLogin,
-        setIsLogin,
-        idCompra,
-        setIdCompra
+        setIsLogin
     }
 
     return (

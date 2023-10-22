@@ -5,7 +5,7 @@ import { BtnOpcionesCompra } from '../components/BtnOpcionesCompra';
 import { BtnRealizarCompra } from '../components/BtnRealizarCompra';
 
 export const Checkout = () => {
-    const { cart, precioTotal, isLogin, idCompra} = useContext(Context);
+    const { cart, precioTotal, isLogin} = useContext(Context);
 
 
     if (cart["productos"].length === 0) {
@@ -18,9 +18,6 @@ export const Checkout = () => {
         <>
             <div className='container-fluid'>
                 <div className='container-fluid'>
-                    <div>
-                        {`tu id de compra es: ${idCompra}`}
-                    </div>
                     <div>
                         Resumen de compra
                     </div>
