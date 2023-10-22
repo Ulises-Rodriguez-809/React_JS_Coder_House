@@ -5,17 +5,22 @@ import { BtnOpcionesCompra } from '../components/BtnOpcionesCompra';
 import { BtnRealizarCompra } from '../components/BtnRealizarCompra';
 
 export const Checkout = () => {
-    const { cart, precioTotal, isLogin } = useContext(Context);
+    const { cart, precioTotal, isLogin, idCompra} = useContext(Context);
 
 
     if (cart["productos"].length === 0) {
         return <h1>El carrito esta vacio</h1>
     }
 
+
+
     return (
         <>
             <div className='container-fluid'>
                 <div className='container-fluid'>
+                    <div>
+                        {`tu id de compra es: ${idCompra}`}
+                    </div>
                     <div>
                         Resumen de compra
                     </div>
