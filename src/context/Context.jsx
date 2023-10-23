@@ -19,8 +19,6 @@ export const ContextWrapper = ({ children }) => {
         email2 : ""
     })
 
-
-
     {/* aca falta hacer una opcion para loguearse desde la la navbar */}
     const [isLogin, setIsLogin] = useState(false);
 

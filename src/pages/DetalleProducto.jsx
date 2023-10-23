@@ -5,6 +5,7 @@ import { ComporbarCategoria } from '../components/ComprobarCategoria';
 import { useGetFSC } from '../customHooks/useGetFSColecction';
 import { cargar } from '../funJS/cargar';
 import { Loading } from '../components/Loading';
+import { NotFound } from './NotFound';
 
 export const DetalleProducto = ({ url }) => {
 
@@ -18,7 +19,7 @@ export const DetalleProducto = ({ url }) => {
 
     return (
         <>
-            {loading ? (producto && <ComporbarCategoria producto={producto} />) : <Loading/>}
+        {loading ? ((producto !== undefined) ? <ComporbarCategoria producto={producto} /> : <NotFound />) : <Loading/>}
         </>
     )
 }

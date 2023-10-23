@@ -4,6 +4,7 @@ import { Item } from '../components/Item';
 import { useGetFSC } from '../customHooks/useGetFSColecction';
 import { cargar } from '../funJS/cargar';
 import { Loading } from '../components/Loading';
+import { NotFound } from './NotFound';
 
 export const ConsolaDetalle = () => {
     const { id } = useParams();
@@ -27,7 +28,7 @@ export const ConsolaDetalle = () => {
         <>
             {loading ? <div className='divUlCardsContainer'>
                 <ul className='ulCards'>
-                    {productoElegido && productoElegido.consolas.map((consolaProduct) => <Item 
+                    {(productoElegido !== undefined) ? productoElegido.consolas.map((consolaProduct) => <Item 
                     key={consolaProduct.id}
                     url={`consolas/${id}/${consolaProduct.id}`}
                     titulo={consolaProduct.name} 
@@ -36,7 +37,7 @@ export const ConsolaDetalle = () => {
                     style={{width : "18rem",height : "710px"}}
                     stock={consolaProduct.stock}>
                         <img className='imgProductos' src={consolaProduct.url} alt={consolaProduct.consola} />
-                    </Item>)}
+                    </Item>) : <NotFound />}
                 </ul>
             </div> : <Loading />}
         </>

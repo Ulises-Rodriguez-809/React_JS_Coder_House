@@ -1,6 +1,6 @@
 import './App.css';
 import { Layout } from './components/Layout';
-import { BrowserRouter, Routes, Route } from 'react-router-dom';
+import { Routes, Route } from 'react-router-dom';
 import { Home } from './pages/Home';
 import { Consolas } from './pages/Consolas';
 import { ConsolaDetalle } from './pages/ConsolaDetalle';
@@ -10,12 +10,12 @@ import { JuegosDetalles } from './pages/JuegosDetalles';
 import { ContextWrapper } from './context/Context';
 import { DetalleProducto } from './pages/DetalleProducto';
 import { Checkout } from './pages/Checkout';
+import { NotFound } from './pages/NotFound';
 
 function App() {
   return (
     <>
       <ContextWrapper>
-        <BrowserRouter>
           <Layout>
             <Routes>
               <Route path='/' element={<Home />} />
@@ -23,17 +23,16 @@ function App() {
               <Route path='/figuras' element={<Figuras />} />
               <Route path='/figuras/:id' element={<DetalleProducto url={'figuras'} />} />
               <Route path='/consolas' element={<Consolas />} />
-              {/* el : es para las url dinamicas --> el nombre q le asignes despues de los : es el nombre q va a tomar como variable esa url q estamos pasando por la url*/}
               <Route path='/consolas/:id' element={<ConsolaDetalle />} />
               <Route path='/consolas/:id/:consola' element={<DetalleProducto url={'consolas'} />} />
               <Route path='/juegos' element={<Juegos />} />
               <Route path='/juegos/:id' element={<JuegosDetalles />} />
               <Route path='/juegos/:id/:juego' element={<DetalleProducto url={'juegos'} />} />
               <Route path='/checkout' element={<Checkout />} />
-              <Route path='*' element={<h1>Error la ruta ingresada no es correcta</h1>} />
+              <Route path='/notfound' element={<NotFound />} />
+              <Route path='*'  element={<NotFound/>} />
             </Routes>
           </Layout>
-        </BrowserRouter>
       </ContextWrapper>
     </>
   );

@@ -7,7 +7,7 @@ import { alertSweet } from '../funJS/alertSweet';
 
 export const BtnRealizarCompra = () => {
 
-    const { cart, setCart, cliente, isLogin} = useContext(Context);
+    const { cart, cliente, isLogin} = useContext(Context);
     let ID = "";
 
     const realizarCompra = async () => {
@@ -23,10 +23,6 @@ export const BtnRealizarCompra = () => {
             ID = await addToFireStore("ordenes", orden);
 
             alertSweet("success", "Todo correcto", `La compra se realizo con exito, tu ID de compra es : ${ID}`);
-
-            setCart({})
-
-            //FALTA Q MODIFIQUE EL STOCK DE LOS PRODUCTOS
         }
     }
 

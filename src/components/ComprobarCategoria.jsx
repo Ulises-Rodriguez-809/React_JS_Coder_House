@@ -1,6 +1,7 @@
 import React from 'react'
 import { ItemDetalle } from './ItemDetalle';
 import { useParams } from 'react-router-dom';
+import { NotFound } from '../pages/NotFound';
 
 export const ComporbarCategoria = ({ producto }) => {
     const { consola, juego } = useParams();
@@ -9,9 +10,9 @@ export const ComporbarCategoria = ({ producto }) => {
 
         return <>
             <div>
-                <ItemDetalle producto={producto}>
+                {(producto !== undefined) ? <ItemDetalle producto={producto}>
                     <img className='imgProductosDetalle' src={producto.url} alt={producto.name} />
-                </ItemDetalle>
+                </ItemDetalle> : <NotFound />}
             </div>
         </>
 
@@ -21,9 +22,9 @@ export const ComporbarCategoria = ({ producto }) => {
 
         return <>
             <div >
-                <ItemDetalle producto={aux}>
+                {(aux !== undefined) ? <ItemDetalle producto={aux}>
                     <img className='imgProductosDetalle' src={aux.url} alt={aux.name} />
-                </ItemDetalle>
+                </ItemDetalle> : <NotFound />}
             </div>
         </>
     }
@@ -32,12 +33,12 @@ export const ComporbarCategoria = ({ producto }) => {
 
         return <>
             <div >
-                <ItemDetalle
+                {(aux !== undefined) ? <ItemDetalle
                     producto={aux}>
                     <img className='imgProductosDetalle'
                         src={aux.url}
                         alt={aux.name} />
-                </ItemDetalle>
+                </ItemDetalle> : <NotFound />}
             </div>
         </>
     }
