@@ -7,7 +7,7 @@ import { alertSweet } from '../funJS/alertSweet';
 
 export const BtnRealizarCompra = () => {
 
-    const { cart, cliente, isLogin} = useContext(Context);
+    const { cart, setCart, cliente, isLogin} = useContext(Context);
     let ID = "";
 
     const realizarCompra = async () => {
@@ -24,7 +24,8 @@ export const BtnRealizarCompra = () => {
 
             alertSweet("success", "Todo correcto", `La compra se realizo con exito, tu ID de compra es : ${ID}`);
 
-            //falta mostrar id del comprador en el alert prodria ser
+            setCart({})
+
             //FALTA Q MODIFIQUE EL STOCK DE LOS PRODUCTOS
         }
     }

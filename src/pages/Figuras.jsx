@@ -1,14 +1,18 @@
 import React from 'react';
 import { Item } from '../components/Item';
 import { useGetFSC } from '../customHooks/useGetFSColecction';
+import { Loading } from '../components/Loading';
+import { cargar } from '../funJS/cargar';
 
 export const Figuras = () => {
+
+    const {loading} = cargar();
 
     const {productos} = useGetFSC("figuras");
 
     return (
         <>
-            <div className='divUlCardsContainer'>
+            {loading ? <div className='divUlCardsContainer'>
                 <ul className='ulCards'>
                     {productos && productos.map((figura) => <Item 
                     key={figura.id} 
@@ -21,7 +25,7 @@ export const Figuras = () => {
                         <img className='imgProductos' src={figura.url} alt={figura.name} />
                     </Item>)}
                 </ul>
-            </div>
+            </div> : <Loading />}
         </>
     )
 }

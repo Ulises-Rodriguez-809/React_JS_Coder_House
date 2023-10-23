@@ -1,18 +1,13 @@
-import React, { useEffect, useState } from 'react'
-import { loadingFun } from '../funJS/asyncMocks';
+import React from 'react'
 import { Item } from '../components/Item';
 import { ItemListContainer } from '../components/ItemListContainer';
 import { Loading } from '../components/Loading';
 import { useGetFSC } from '../customHooks/useGetFSColecction';
+import { cargar } from '../funJS/cargar';
 
 export const Home = () => {
 
-    const [loading, setLoading] = useState(false);
-
-    useEffect(() => {
-        loadingFun()
-            .then(cargando => setLoading(cargando))
-    }, [])
+    const {loading} = cargar();
 
     const {productos} = useGetFSC("juegosRetro");
 

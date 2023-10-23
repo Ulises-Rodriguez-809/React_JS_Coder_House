@@ -1,11 +1,12 @@
-import React, { useContext, useState } from 'react'
+import React, { useContext} from 'react'
 import { Context } from '../context/Context'
 import { Formulario } from '../components/Formulario';
 import { BtnOpcionesCompra } from '../components/BtnOpcionesCompra';
 import { BtnRealizarCompra } from '../components/BtnRealizarCompra';
+import { UlProducto } from '../components/UlProducto';
 
 export const Checkout = () => {
-    const { cart, precioTotal, isLogin} = useContext(Context);
+    const { cart, isLogin} = useContext(Context);
 
 
     if (cart["productos"].length === 0) {
@@ -13,16 +14,14 @@ export const Checkout = () => {
     }
 
 
-
     return (
         <>
             <div className='container-fluid'>
                 <div className='container-fluid'>
-                    <div>
+                    <div className='resumenTitulo'>
                         Resumen de compra
                     </div>
-                    aca capaz un contenedor con grid
-                    <div className='container-fluid'>
+                    <div>
                         <div className='resumenContainer'>
                             <ul className='ulResumenCompra'>
                                 <li>
@@ -38,12 +37,10 @@ export const Checkout = () => {
                                     Precio Total
                                 </li>
                             </ul>
-                            <ul className='ulResumenCompra'>
-                                <li>Yuna</li>
-                                <li>2</li>
-                                <li>$50</li>
-                                <li>100</li>
-                            </ul>
+                            {cart["productos"].map(producto => <UlProducto key={producto.name} producto={producto}/>)}
+                        </div>
+                        <div className='container-fluid precioTotal'>
+                            <p>Precio Total_________${Math.round(cart["precioTotal"] * 100) / 100}</p>
                         </div>
                     </div>
                 </div>
