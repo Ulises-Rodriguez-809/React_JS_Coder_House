@@ -15,9 +15,7 @@ export const ConsolaDetalle = () => {
 
     const {loading} = cargar();
 
-
     const {productos} = useGetFSC("consolas");
-
 
     const obtenerProducto = (id) => {
         return productos.find(producto => producto.id === id);

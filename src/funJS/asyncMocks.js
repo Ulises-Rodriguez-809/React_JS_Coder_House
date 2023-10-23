@@ -4,6 +4,6 @@ export const loadingFun = () => {
     return new Promise((resolve, reject) => {
         setTimeout(() =>{
             resolve(isLoading = true);
-        }, 1450)
+        }, 1350)
     })
 }

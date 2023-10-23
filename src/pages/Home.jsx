@@ -5,6 +5,7 @@ import { Loading } from '../components/Loading';
 import { useGetFSC } from '../customHooks/useGetFSColecction';
 import { cargar } from '../funJS/cargar';
 
+
 export const Home = () => {
 
     const {loading} = cargar();

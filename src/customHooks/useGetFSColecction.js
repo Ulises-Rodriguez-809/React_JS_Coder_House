@@ -11,12 +11,13 @@ export const useGetFSC = (coleccion) => {
         const todasLasColecciones = collection(db, coleccion);
         getDocs(todasLasColecciones)
             .then(snapshot => {
-
+                
                 if (!snapshot.empty) {
 
                     const { docs } = snapshot;
 
-                    const aux = []
+                    const aux = [];
+
                     docs.forEach(producto => {
                         aux.push(producto.data())
                     })

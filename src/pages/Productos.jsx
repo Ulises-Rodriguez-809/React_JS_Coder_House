@@ -9,7 +9,7 @@ export const Productos = ({ url, array = null }) => {
     const {loading} = cargar();
 
     const {productos} = useGetFSC(url);
-
+    
     return (
         <>
             {loading ? <section>

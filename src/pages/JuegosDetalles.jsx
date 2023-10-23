@@ -4,12 +4,11 @@ import { Item } from '../components/Item';
 import { useGetFSC } from '../customHooks/useGetFSColecction';
 import { Loading } from '../components/Loading';
 import { cargar } from '../funJS/cargar';
-// import useFetch from '../customHooks/useFetch';
 
 export const JuegosDetalles = () => {
 
     const { id } = useParams();
-    // const { productos } = useFetch('/juegos/juegos.json');
+    
     const {productos} = useGetFSC("juegos");
 
     const {loading} = cargar();

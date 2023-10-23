@@ -12,7 +12,6 @@ export const DetalleProducto = ({ url }) => {
 
     const {loading} = cargar();
 
-
     const {productos} = useGetFSC(url);
 
     const producto = obtenerProducto(id,productos);
