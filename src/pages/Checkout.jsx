@@ -3,7 +3,7 @@ import { Context } from '../context/Context'
 import { Formulario } from '../components/Formulario';
 import { BtnOpcionesCompra } from '../components/BtnOpcionesCompra';
 import { BtnRealizarCompra } from '../components/BtnRealizarCompra';
-import { UlProducto } from '../components/UlProducto';
+import { ResumenCompra } from '../components/ResumenCompra';
 
 export const Checkout = () => {
     const { cart, isLogin} = useContext(Context);
@@ -17,33 +17,7 @@ export const Checkout = () => {
     return (
         <>
             <div className='container-fluid'>
-                <div className='container-fluid'>
-                    <div className='resumenTitulo'>
-                        Resumen de compra
-                    </div>
-                    <div>
-                        <div className='resumenContainer'>
-                            <ul className='ulResumenCompra'>
-                                <li>
-                                    Producto
-                                </li>
-                                <li>
-                                    Cantidad
-                                </li>
-                                <li>
-                                    Precio Unitario
-                                </li>
-                                <li>
-                                    Precio Total
-                                </li>
-                            </ul>
-                            {cart["productos"].map(producto => <UlProducto key={producto.name} producto={producto}/>)}
-                        </div>
-                        <div className='container-fluid precioTotal'>
-                            <p>Precio Total_________${Math.round(cart["precioTotal"] * 100) / 100}</p>
-                        </div>
-                    </div>
-                </div>
+                <ResumenCompra />
                 {!isLogin ? <div className='container-fluid'>
                     <div className='container-fluid'>
                         <Formulario />
