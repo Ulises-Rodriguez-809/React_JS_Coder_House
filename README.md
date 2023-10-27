@@ -3,10 +3,17 @@
 ## Nombre de la pagina: *La Friki Cueva*
 
 ### Dependencia extras por npm:
-1. Bootstrap
+1. Bootstrap 
+    >La use debido a q facilitaba la creacion de navbar y me ahorraba tiempo en el css
 2. Firebase
+    >EN un principio tenia todos mis productos en el .json y los trai con useFetch (mi hook perzonalizado) pero luego tuvimos q cambiar a firebase
 3. React Router DOM
+    >Para poder hacer el ruteo de la app
 4. Sweetalert2
+    >Para mostrar unos alerts mas agredables a la vista
+
+### Video de como usar la pagina:
+    >Youtube : https://youtu.be/gT5LTm-6rBg
 
 ### Ideas/Enfoques:
 1. En App.jsx se ecnuentra el wrapper del contexto para que todos los componentes hijos puedan acceder a las vairiables como "cliente" o "cart", el Layout (encargado de mostrar el navbar y footer en todas las pages) y el ruteo de las diferentes pages
