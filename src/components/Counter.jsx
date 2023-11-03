@@ -9,7 +9,6 @@ export const Counter = ({ stock, setCantidad }) => {
             setCount(prevCount => prevCount + 1);
             setCantidad(prevCantidad => prevCantidad + 1);
         }
-
     }
 
     const decrementar = () => {
