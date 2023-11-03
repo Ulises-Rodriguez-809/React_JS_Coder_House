@@ -18,6 +18,7 @@ export const Counter = ({ stock, setCantidad }) => {
         }
     }
 
+    
     return (
         <>
             <div className='divBtnCounterContainer'>
