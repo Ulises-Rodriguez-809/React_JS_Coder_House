@@ -52,7 +52,7 @@ export const Footer = () => {
                     <p>Contactos:</p>
                     <ul className='ulContacto'>
                         <p>uliisesrodriguez809@gmail.com</p>
-                        <p>0351-555555</p>
+                        <p>2302411290</p>
                     </ul>
                 </div>
             </li>
