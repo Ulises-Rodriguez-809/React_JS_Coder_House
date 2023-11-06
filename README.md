@@ -15,6 +15,9 @@
 ### Video de como usar la pagina:
     >Youtube : https://youtu.be/gT5LTm-6rBg
 
+### Pagina montada en servidor *vercel*
+    >https://e-commerce-six-drab.vercel.app/
+
 ### Ideas/Enfoques:
 1. En App.jsx se ecnuentra el wrapper del contexto para que todos los componentes hijos puedan acceder a las vairiables como "cliente" o "cart", el Layout (encargado de mostrar el navbar y footer en todas las pages) y el ruteo de las diferentes pages
 
